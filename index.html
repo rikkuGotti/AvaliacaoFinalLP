@@ -8,22 +8,136 @@ Data de entrega: 07/06
 -->
 
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>ScreenTime</title>
 
+
+    <meta name="descricao"
+        content="ScreenTime: Este site tem foco em fazer recomendações de Filmes e Séries para você poder assistir em seus momentos de lazer."/>
+    <meta name="descricao">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS próprio -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./bootstrap/bootstrap/css/bootstrap.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Noto+Sans+Egyptian+Hieroglyphs&family=Open+Sans:wght@500&display=swap" rel="stylesheet" />
+</head>
+
 </head>
 <body>
-    
-    <header class="topo">
 
+    <header>
+        <nav class="navegacao">
+            <!-- Menu padronizado -->
+    <div class="container">
+        <a class="navbar-brand" href="index.html">ScreenTime</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Abrir menu de navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        </nav>
     </header>
 
+    <main>
+        <section class="hero">
+            <!-- Carrossel Bootstrap -->
+            <section aria-label="Destaques em banner">
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="none">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="8000">
+        <img src="img/interstellar.jpg" class="d-block w-100" alt="Banner de destaque 1: Interestelar" />
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Interestelar</h2>
+          <p>Uma jornada épica pelo espaço e pelo tempo.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-bs-interval="8000">
+        <img src="img/starwars.jpg" class="d-block w-100" alt="Banner de destaque 2: Star Wars" loading="lazy" />
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Star Wars</h2>
+          <p>A saga que redefiniu a ficção científica.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-bs-interval="8000">
+        <img src="img/harrypotter.jpg" class="d-block w-100" alt="Banner de destaque 3: Harry Potter" loading="lazy" />
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Harry Potter</h2>
+          <p>Magia e aventura que encantaram gerações.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" data-bs-target="#carouselExampleInterval" type="button" data-bs-slide="prev" aria-label="Voltar banner">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+
+    <button class="carousel-control-next" data-bs-target="#carouselExampleInterval" type="button" data-bs-slide="next" aria-label="Avançar banner">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+</section>
+    <!-- Fim Carousel -->
+
+        <section class="apresentacao">
+        <!-- Apresentação do tema -->
+            <h1>Conheça os principais Filmes e Séries da semana!</h1>
+            <p>ScreenTime é um espaço dedicado a quem ama cinema e séries. Nosso objetivo é oferecer recomendações de filmes cuidadosamente selecionados, ajudando você a descobrir novas histórias, clássicos inesquecíveis e produções que merecem sua atenção. Seja para uma maratona no fim de semana ou para escolher o próximo título da sua lista, aqui você encontra inspiração para aproveitar ao máximo o seu tempo de tela.</p>
+        </section>
+
+        <section class="destaques">
+            <!-- Cards principais -->
+        </section>
+    </main>
+
+    <footer>
+        <!-- Rodapé padronizado -->
+        <div class="container">
+            <p>Projeto desenvolvido para a AF - Linguagens de Programação.</p>
+            <p>Aluno 1: Enrico Pimentel Gotti Encarnação - RA: 250779</p>
+            <p>Aluno 2: João Vitor Vieira Skierzynski  - RA: 250964</p>
+            <p>&copy; 2026 - Projeto acadêmico sem fins comerciais.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS próprio -->
+    <script src="./js/script.js"></script>
 </body>
 </html>
