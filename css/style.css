@@ -91,6 +91,19 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.hero {
+    margin-top: 0;
+    padding-top: 0;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+}
+
 .carousel-item h2 {
         font-weight: 700;
 }
@@ -98,6 +111,10 @@ section {
 .carousel-item {
     font-family: 'Faunces', sans-serif;
     padding: 0.85rem 1.1rem;
+}
+
+.apresentacao {
+    padding-top: 50px; 
 }
 
 .apresentacao h1{
@@ -179,4 +196,3 @@ footer {
         padding: 1rem;
     }
 }
-
