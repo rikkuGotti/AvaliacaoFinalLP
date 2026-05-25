@@ -1,0 +1,183 @@
+/*
+AF - Avaliação Final - Linguagens de Programação
+Tema do Projeto: Filmes e Séries
+Aluno 1: Enrico Pimentel Gotti Encarnação - RA: 250779
+Aluno 2: João Vitor Vieira Skierzynski  - RA: 250964
+*/
+
+:root {
+    --cor-primaria: #0d6efd;
+    --cor-secundaria: #212529;
+    --cor-clara: #f8f9fa;
+    --cor-escura: #111;
+    --espacamento-padrao: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-clara);
+    color: var(--cor-escura);
+    line-height: 1.6;
+    padding-top: 70px;
+    justify-content: center;
+    background-color: #e0f7fa;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.apresentacao { 
+    background: linear-gradient(135deg, #f5f5f5, #fdf6e3);
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #222;
+    font-family: "Poppins", "Montserrat", sans-serif;
+}
+
+.apresentacao h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.apresentacao p {
+    font-size: 1.1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #333;
+}
+
+.apresentacao h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: black;
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .apresentacao h1 {
+    font-size: 2.2rem;
+}
+
+.apresentacao p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #4dd0e1; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item h2 {
+        font-weight: 700;
+}
+
+.carousel-item {
+    font-family: 'Faunces', sans-serif;
+    padding: 0.85rem 1.1rem;
+}
+
+.apresentacao h1{
+    font-family: 'Faunces', sans-serif;
+    margin: 0.5rem 0 1rem;
+    font-size: clamp(2.7rem, 6vh, 5.2rem);
+    line-height: 0.95
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.rodape {
+    background-color: var(--cor-secundaria);
+    color: white;
+    text-align: center;
+    padding: 10px 8px; 
+    justify-content: center;
+    font-size: 0.85rem; 
+    line-height: 1.4; 
+}
+
+.rodape * {
+    margin: 0;
+    padding: 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #e0f7fa;
+    justify-items: center;
+}
+
+.card-personalizado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #ffffff;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-personalizado:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card-personalizado img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-personalizado p {
+    color: #333333;
+    margin: 1rem;
+    line-height: 1.6;
+}
+
+.card-personalizado h2,
+.card-personalizado p {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+}
+

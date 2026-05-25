@@ -12,7 +12,7 @@ Data de entrega: 07/06
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScreenTime</title>
+    <title>ScreenTime - Home</title>
 
 
     <meta name="descricao"
@@ -35,32 +35,33 @@ Data de entrega: 07/06
 
     <header>
         <nav class="navegacao">
-            <!-- Menu padronizado -->
+        <!-- Menu padronizado -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="index.html">ScreenTime</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Abrir menu de navegação">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <a class="navbar-brand" href="index.html">ScreenTime</a>
 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+              aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu de navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="menuPrincipal">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="galeria.html">Galeria</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="contato.html">Contato</a>
-                </li>
-            </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </div>
     </div>
-        </nav>
-    </header>
+  </nav>
+</header>
+
 
     <main>
         <section class="hero">
@@ -72,6 +73,8 @@ Data de entrega: 07/06
       <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="4" aria-label="Slide 5"></button>
     </div>
 
     <div class="carousel-inner">
@@ -98,6 +101,22 @@ Data de entrega: 07/06
           <p>Magia e aventura que encantaram gerações.</p>
         </div>
       </div>
+
+      <div class="carousel-item" data-bs-interval="8000">
+        <img src="img/gentegrande.jpg" class="d-block w-100" alt="Banner de destaque 3: Gente Grande" loading="lazy" />
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Gente Grande</h2>
+          <p>É uma comédia sobre cinco amigos de infância que se reencontram décadas depois, durante um feriado de 4 de julho, e descobrem que crescer não significa necessariamente amadurecer.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-bs-interval="8000">
+        <img src="img/fastandfurious.jpg" class="d-block w-100" alt="Banner de destaque 4: Velozes e Furiosos" loading="lazy" />
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Velozes e Furiosos</h2>
+          <p>Uma explosiva mistura de velocidade, ação e adrenalina, onde corridas ilegais se cruzam com laços de família.</p>
+        </div>
+      </div>
     </div>
 
     <button class="carousel-control-prev" data-bs-target="#carouselExampleInterval" type="button" data-bs-slide="prev" aria-label="Voltar banner">
@@ -121,12 +140,59 @@ Data de entrega: 07/06
 
         <section class="destaques">
             <!-- Cards principais -->
+            <div class="cards">
+                <article class="card-personalizado">
+                    <figure>
+                        <img src="./img/interstellar.jpg" alt="Filme de viagem espacial">
+                        <figcaption>interstellar, lançado em 2014</figcaption>
+                    </figure>
+                    <h3>Filme Interstellar</h3>
+                    <p>Interestelar é um filme de 2014, que <strong>ciência e emoção</strong>, e se tornou um dos <em>maiores sucessos de bilheteria</em> e crítica da década.</p>
+                    <p class="destaque-texto">
+                </article>
+
+                <article class="card-personalizado">
+                    <figure>
+                        <img src="./img/starwars.jpg" alt="Filme de ficção pela galaxia">
+                        <figcaption>Star Wars, lançado em 1977.</figcaption>
+                    </figure>
+                    <h3>Filme Star Wars</h3>
+                    <p>Star Wars <strong>nasceu em 1977</strong> e continua vivo até hoje, com o mais novo capítulo (O Mandaloriano e Grogu, 2026) <em>trazendo a franquia de volta às telonas</em> após sete anos.</p>
+                </article>
+
+                <article class="card-personalizado">
+                    <figure>
+                        <img src="./img/harrypotter.jpg" alt="Filme de ficção sobre bruxos">
+                        <figcaption>Harry Potter, lançado em 2001.</figcaption>
+                    </figure>
+                    <h3>Filme Harry Potter</h3>
+                    <p>Os filmes de Harry Potter acompanharam o crescimento dos personagens e dos atores ao <em>de uma década</em>, <strong>a saga em um fenômeno cultural global</strong> que continua vivo até hoje.</p>
+                </article>
+
+                <article class="card-personalizado">
+                    <figure>
+                        <img src="./img/gentegrande.jpg" alt="Filme de comédia">
+                        <figcaption>Gente Grande, lançado em 2010.</figcaption>
+                    </figure>
+                    <h3>Filme Gente Grande</h3>
+                    <p>Gente Grande é uma <strong>comédia sobre amizade e reencontros</strong>, que mesmo <em>sem agradar a crítica, conquistou o público e se tornou um sucesso de bilheteria</em>, garantindo uma sequência três anos depois.</p>
+                </article>
+
+                <article class="card-personalizado">
+                    <figure>
+                        <img src="./img/fastandfurious.jpg" alt="Filme de ação sobre carros">
+                        <figcaption>Velozes e Furiosos, lançado em 2001.</figcaption>
+                    </figure>
+                    <h3>Filme Velozes e Furiosos</h3>
+                    <p>Velozes e Furiosos é uma das franquias mais duradouras de Hollywood, que cresceu de <strong>corridas de rua</strong> em Los Angeles para <em>aventuras globais com vilões cada vez mais grandiosos</em>.</p>
+                </article>
+            </div>
         </section>
     </main>
 
     <footer>
         <!-- Rodapé padronizado -->
-        <div class="container">
+        <div class="rodape">
             <p>Projeto desenvolvido para a AF - Linguagens de Programação.</p>
             <p>Aluno 1: Enrico Pimentel Gotti Encarnação - RA: 250779</p>
             <p>Aluno 2: João Vitor Vieira Skierzynski  - RA: 250964</p>
@@ -137,7 +203,7 @@ Data de entrega: 07/06
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- JS próprio -->
-    <script src="./js/script.js"></script>
-</body>
+     <!-- JS próprio -->
+      <script src="./js/script.js"></script>
+    </body>
 </html>
