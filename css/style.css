@@ -26,7 +26,6 @@ body {
     line-height: 1.6;
     padding-top: 70px;
     justify-content: center;
-    background-color: #e0f7fa;
 }
 
 img {
@@ -35,12 +34,20 @@ img {
     border-radius: 20px;
 }
 
+main {
+    flex: 1;
+    margin-bottom: 60px;
+}
+
 section {
     padding: 60px 0;
 }
 
 .apresentacao { 
     padding: 4rem 2rem;
+    margin: 0.5rem 0 1rem;
+    font-size: clamp(2.7rem, 6vh, 5.2rem);
+    line-height: 0.95;
     text-align: center;
     color: #222;
     font-family: "Faunces", "Montserrat", sans-serif;
@@ -117,19 +124,17 @@ section {
     padding-top: 50px; 
 }
 
-.apresentacao h1{
-    font-family: 'Faunces', sans-serif;
-    margin: 0.5rem 0 1rem;
-    font-size: clamp(2.7rem, 6vh, 5.2rem);
-    line-height: 0.95
-}
 
 footer {
+    /* margin-top: auto; */
+    display: contents;
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 0;
+    /* z-index: 1000; */
 }
+
+
 
 .rodape {
     background-color: var(--cor-secundaria);
@@ -148,10 +153,11 @@ footer {
 
 .cards {
     display: grid;
+    margin-bottom: 40px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 2rem;
-    background-color: #e0f7fa;
+    background-color: var(--cor-clara);
     justify-items: center;
 }
 
