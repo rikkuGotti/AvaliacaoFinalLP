@@ -32,10 +32,9 @@ Data de entrega: 07/06
 <body>
 
     <header>
-        <nav class="navegacao">
+        <nav class="navbar">
         <!-- Menu padronizado -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
+      <div class="container">
       <a class="navbar-brand" href="index.html">ScreenTime</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
@@ -54,10 +53,12 @@ Data de entrega: 07/06
           <li class="nav-item">
             <a class="nav-link" href="contato.html">Contato</a>
           </li>
+          <li class="nav-item">
+            <a id="btnTema" class="nav-link" href="#">Alternar tema</a>
+          </li>
         </ul>
       </div>
     </div>
-  </nav>
   </nav>
 </header>
 
@@ -165,7 +166,11 @@ Data de entrega: 07/06
     <p>ScreenTime é um espaço dedicado a quem ama cinema e séries. Nosso objetivo é oferecer recomendações de filmes cuidadosamente selecionados, ajudando você a descobrir novas histórias, clássicos inesquecíveis e produções que merecem sua atenção. Seja para uma maratona no fim de semana ou para escolher o próximo título da sua lista, aqui você encontra inspiração para aproveitar ao máximo o seu tempo de tela.</p>
 </section>
 
-<section class="destaques">
+<section class="destaques" aria-label="titulo-destaques">
+    <h2 id="titulo-destaques">Destaques da semana!</h2>
+
+    <p>Confira os filmes e séries que estão chamando atenção e conquistando o público.</p>
+
     <!-- Cards principais -->
     <div class="cards">
         <article class="card-personalizado">
@@ -241,6 +246,19 @@ Data de entrega: 07/06
                 </article>
             </div>
         </section>
+
+        <section class="galeria">
+            <h2>Veja agora mais recomendações de filmes e séries.</h2>
+            <p>Mergulhe no universo do cinema e das séries através da nossa galeria. Encontre imagens, cenas marcantes e descubra produções que conquistaram o público e continuam inspirando novas histórias.</p>
+            <a href="galeria.html" class="btn">Acessar Galeria</a>
+        </section>
+
+        <section class="contato">
+            <h2>Entre em contato</h2>
+            <p>Tem sugestões, dúvidas ou quer compartilhar sua opinião sobre filmes e séries? Fale conosco e participe do ScreenTime.</p>
+            <a href="contato.html" class="btn">Entrar em contato</a>
+        </section>
+
     </main>
 
     <footer>
@@ -249,6 +267,10 @@ Data de entrega: 07/06
             <p>Projeto desenvolvido para a AF - Linguagens de Programação.</p>
             <p>Aluno 1: Enrico Pimentel Gotti Encarnação - RA: 250779</p>
             <p>Aluno 2: João Vitor Vieira Skierzynski  - RA: 250964</p>
+            <p>Turma: N2 || 3º Semestre</p>
+            <a href="index.html">Home</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contato.html">Contato</a>
             <p>&copy; 2026 - Projeto acadêmico sem fins comerciais.</p>
         </div>
     </footer>
