@@ -10,16 +10,6 @@ Aluno 2: João Vitor Vieira Skierzynski  - RA: 250964
     --cor-secundaria: #212529;
     --cor-clara: #f8f9fa;
     --cor-escura: #111;
-    --texto: #111;
-    --card: #ffffff;
-    --background: #f8f9fa;
-    --rodape: #ffffff;
-    --navbar-bg: var(--background);
-    --navbar-texto: var(--texto);
-    --navbar-hover: #ffc107;
-}
-
-.tema-escuro {
     --background: #000;
     --texto: #f5f5f5;
     --card: #1e1e1e;
@@ -27,6 +17,16 @@ Aluno 2: João Vitor Vieira Skierzynski  - RA: 250964
     --navbar-bg: #111;
     --navbar-texto: #f5f5f5;
     --navbar-hover: #0d6efd;
+}
+
+.tema-escuro {
+    --texto: #111;
+    --card: #ffffff;
+    --background: #f8f9fa;
+    --rodape: #ffffff;
+    --navbar-bg: var(--background);
+    --navbar-texto: var(--texto);
+    --navbar-hover: #ffc107;
 }
 
 * {
@@ -233,8 +233,8 @@ section {
     }
 }
 
-.galeria,
-.contato {
+.btn-galeria,
+.btn-contato {
     font-family:'Poppins', Arial;
     background-color: var(--card);
     max-width: 1000px;
@@ -245,24 +245,24 @@ section {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.galeria h2,
-.contato h2 {
+.btn-galeria h2,
+.btn-contato h2 {
     font-size: 2rem;
     color: var(--texto);
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
-.galeria p,
-.contato p {
+.btn-galeria p,
+.btn-contato p {
     padding: 12px 28px;
     border-radius: 30px;
     font-weight: 600;
     transition: all 0.3 ease;
 }
 
-.galeria .btn,
-.contato .btn {
+.btn-galeria .btn,
+.btn-contato .btn {
     color: var(--texto);
     padding: 12px 28px;
     border-radius: 30px;
@@ -270,8 +270,8 @@ section {
     transition: all 0.3 ease;
 }
 
-.galeria .btn:hover,
-.contato .btn:hover {
+.btn-galeria .btn:hover,
+.btn-contato .btn:hover {
 transform: translateY(-3px);
 color: var(--navbar-hover);
 }
@@ -328,4 +328,41 @@ footer {
 .rodape * {
     margin: 0;
     padding: 0;
+}
+
+.galeria {
+    background-color: var(--background);
+    color: var(--card);
+}
+
+.galeria h1, .galeria h2 {
+    color: var(--texto);
+    margin-bottom: 1rem;
+}
+
+.galeria p {
+    color: var(--texto);
+    margin-bottom: 2rem;
+}
+
+.cardG {
+    background-color: var(--card);
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardG:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.filtros .btn {
+    margin: 0.3rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.filtros .btn:hover {
+    background-color: var(--navbar-hover);
+    color: var(--texto);
 }
